@@ -58,7 +58,7 @@ class Account(AbstractBaseUser):
     is_superadmin = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FILEDS = ['username', 'first_name', 'last_name', 'registration_number']
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name', 'registration_number']
 
     objects = MyAccountManager()
 
